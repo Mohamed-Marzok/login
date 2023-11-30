@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.page-img img {
+  width: 50px;
+  filter: drop-shadow(2px 2px 1px #777);
+}
+
+.page-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px 40px 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 40px;
+}
+
+.form-header .form-welcome {
+  font-family: "Playpen Sans", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #336699;
+}
+
+.form-header .form-discreption {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  color: #8a9bb5;
+}
+
+@media (max-width: 768px) {
+  .form-header .form-discreption {
+    font-size: 10px;
+  }
+}
+
+.form-boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-username,
+.form-password {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px #ff9966;
+}
+
+.form-icon {
+  color: #ff9966;
+  margin-right: 5px;
+}
+
+.form-input {
+  border: none;
+  width: 300px;
+  height: 30px;
+}
+
+.btn-login {
+  width: 350px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #66cc99;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-login:active {
+  background-color: #ffffff;
+  color: #66cc99;
+}
+
+@media (max-width: 768px) {
+  .form-input {
+    width: 240px;
+  }
+  .btn-login {
+    width: 250px;
+  }
+}
+.form-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.links-forgetpassword {
+  color: #fd3546;
+}
+.links-signup {
+  color: #471dad;
+}
